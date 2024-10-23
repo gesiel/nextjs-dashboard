@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState, useEffect } from 'react';
+import { useActionState } from 'react';
 import { CustomerField } from '@/app/lib/definitions';
 import Link from 'next/link';
 import {
@@ -29,8 +29,8 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               id="customer"
               name="customerId"
               className="peer block w-full cursor-pointer rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-              defaultValue=""
               aria-describedby="customer-error"
+              defaultValue=""
             >
               <option value="" disabled>
                 Select a customer
